@@ -1,0 +1,56 @@
+h1 {
+  padding: 0 1rem;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}
+
+@media (min-width: 800px) {
+  mat-sidenav {
+    max-width: 80px;
+    padding-top: 3.5rem;
+    transition: width 0.3s ease;
+  }
+}
+@media (max-width: 800px) {
+  mat-sidenav {
+    min-width: 200px;
+    padding-top: 4rem;
+  }
+}
+mat-sidenav .entry {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+}
+
+@media (min-width: 800px) {
+  .entry > span {
+    display: none;
+  }
+  .menu-button {
+    display: none;
+  }
+}
+
+mat-sidenav-content {
+  padding-top: 3.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  mat-sidenav-content {
+    padding-top: 4rem;
+  }
+}

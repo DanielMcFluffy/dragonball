@@ -1,0 +1,33 @@
+.container {
+  margin: 20px;
+}
+
+.loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.error {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-block {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
